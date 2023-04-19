@@ -1,0 +1,127 @@
+[
+    {
+        "foodName": "Egg Sandwich",
+        "price": 4.99,
+        "calories": 400,
+        "plateSize": 1,
+        "type": "breakfast",
+        "ingredients": [
+            "english muffin",
+            "egg",
+            "cheese",
+            "sausage"
+        ]
+    },
+    {
+        "foodName": "Bagel and Cream Cheese",
+        "price": 3.99,
+        "calories": 320,
+        "plateSize": 1,
+        "type": "breakfast",
+        "ingredients": [
+            "bagel",
+            "cream cheese"
+        ]
+    },
+    {
+        "foodName": "Omelette",
+        "price": 7.99,
+        "calories": 600,
+        "plateSize": 1,
+        "type": "breakfast",
+        "ingredients": [
+            "eggs",
+            "cheese",
+            "spinach",
+            "mushrooms",
+            "onions",
+            "peppers"
+        ]
+    },
+    {
+        "foodName": "French Toast",
+        "price": 6.99,
+        "calories": 550,
+        "plateSize": 1,
+        "type": "breakfast",
+        "ingredients": [
+            "bread",
+            "egg",
+            "milk",
+            "cinnamon",
+            "maple syrup"
+        ]
+    },
+    {
+        "foodName": "Pancakes",
+        "price": 5.99,
+        "calories": 500,
+        "plateSize": 1,
+        "type": "breakfast",
+        "ingredients": [
+            "pancake mix",
+            "milk",
+            "egg",
+            "butter",
+            "maple syrup"
+        ]
+    },
+    {
+        "foodName": "Waffles",
+        "price": 6.99,
+        "calories": 550,
+        "plateSize": 1,
+        "type": "breakfast",
+        "ingredients": [
+            "waffle mix",
+            "milk",
+            "egg",
+            "butter",
+            "maple syrup"
+        ]
+    },
+    {
+        "foodName": "Breakfast Burrito",
+        "price": 7.99,
+        "calories": 700,
+        "plateSize": 1,
+        "type": "breakfast",
+        "ingredients": [
+            "tortilla",
+            "egg",
+            "bacon/sausage",
+            "potatoes",
+            "cheese",
+            "salsa"
+        ]
+    },
+    {
+        "foodName": "Avocado Toast",
+        "price": 5.99,
+        "calories": 450,
+        "plateSize": 1,
+        "type": "breakfast",
+        "ingredients": [
+            "bread",
+            "avocado",
+            "tomato",
+            "salt",
+            "pepper"
+        ]
+    },
+    {
+        "foodName": "Breakfast Bowl",
+        "price": 8.99,
+        "calories": 650,
+        "plateSize": 2,
+        "type": "breakfast",
+        "ingredients": [
+            "hash browns",
+            "egg",
+            "bacon/sausage",
+            "cheese",
+            "salsa"
+        ]
+    }
+
+]

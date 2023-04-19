@@ -1,0 +1,95 @@
+[
+    {
+        "foodName": "Iced Coffee",
+        "price": 3.99,
+        "calories": 120,
+        "plateSize": "1",
+        "type": "drink",
+        "ingredients": [
+            "coffee",
+            "ice",
+            "milk",
+            "sugar"
+        ]
+    },
+    {
+        "foodName": "Cappuccino",
+        "price": 4.50,
+        "calories": 130,
+        "plateSize": "1",
+        "type": "drink",
+        "ingredients": [
+            "espresso",
+            "milk",
+            "foam"
+        ]
+    },
+    {
+        "foodName": "Green Tea",
+        "price": 2.99,
+        "calories": 0,
+        "plateSize": "1",
+        "type": "drink",
+        "ingredients": [
+            "green tea leaves",
+            "hot water"
+        ]
+    },
+    {
+        "foodName": "Chai Latte",
+        "price": 4.99,
+        "calories": 220,
+        "plateSize": "1",
+        "type": "drink",
+        "ingredients": [
+            "chai tea bag",
+            "milk",
+            "sugar"
+        ]
+    },
+    {
+        "foodName": "Fresh Orange Juice",
+        "price": 4.50,
+        "calories": 150,
+        "plateSize": "1",
+        "type": "drink",
+        "ingredients": [
+            "fresh oranges"
+        ]
+    },
+    {
+        "foodName": "Strawberry Smoothie",
+        "price": 5.99,
+        "calories": 320,
+        "plateSize": "1",
+        "type": "drink",
+        "ingredients": [
+            "strawberries",
+            "banana",
+            "yogurt",
+            "honey"
+        ]
+    },
+    {
+        "foodName": "Lemonade",
+        "price": 3.50,
+        "calories": 180,
+        "plateSize": "1",
+        "type": "drink",
+        "ingredients": [
+            "lemons",
+            "water",
+            "sugar"
+        ]
+    },
+    {
+        "foodName": "Sparkling Water",
+        "price": 2.50,
+        "calories": 0,
+        "plateSize": "1",
+        "type": "drink",
+        "ingredients": [
+            "water"
+        ]
+    }
+]

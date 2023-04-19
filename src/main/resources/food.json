@@ -1,0 +1,204 @@
+[
+    {
+        "foodName": "Chicken Burrito",
+        "price": 8.99,
+        "calories": 975,
+        "plateSize": 3,
+        "type": "food",
+        "ingredients": [
+            "tortilla",
+            "rice",
+            "beans",
+            "chicken",
+            "cheese",
+            "lettuce",
+            "salsa"
+        ]
+    },
+    {
+        "foodName": "Steak Burrito",
+        "price": 9.99,
+        "calories": 945,
+        "plateSize": 3,
+        "type": "food",
+        "ingredients": [
+            "tortilla",
+            "rice",
+            "beans",
+            "steak",
+            "cheese",
+            "lettuce",
+            "salsa"
+        ]
+    },
+    {
+        "foodName": "Carnitas Burrito",
+        "price": 8.99,
+        "calories": 1005,
+        "plateSize": 3,
+        "type": "food",
+        "ingredients": [
+            "tortilla",
+            "rice",
+            "beans",
+            "carnitas",
+            "cheese",
+            "lettuce",
+            "salsa"
+        ]
+    },
+    {
+        "foodName": "Barbacoa Burrito",
+        "price": 8.99,
+        "calories": 965,
+        "plateSize": 3,
+        "type": "food",
+        "ingredients": [
+            "tortilla",
+            "rice",
+            "beans",
+            "barbacoa",
+            "cheese",
+            "lettuce",
+            "salsa"
+        ]
+    },
+    {
+        "foodName": "Chorizo Burrito",
+        "price": 9.99,
+        "calories": 1095,
+        "plateSize": 3,
+        "type": "food",
+        "ingredients": [
+            "tortilla",
+            "rice",
+            "beans",
+            "chorizo",
+            "cheese",
+            "lettuce",
+            "salsa"
+        ]
+    },
+    {
+        "foodName": "Sofritas Burrito",
+        "price": 8.99,
+        "calories": 945,
+        "plateSize": 3,
+        "type": "food",
+        "ingredients": [
+            "tortilla",
+            "rice",
+            "beans",
+            "sofritas",
+            "guacamole",
+            "lettuce",
+            "salsa"
+        ]
+    },
+    {
+        "foodName": "Chicken Burrito Bowl",
+        "price": 8.99,
+        "calories": 630,
+        "plateSize": 2,
+        "type": "food",
+        "ingredients": [
+            "rice",
+            "beans",
+            "chicken",
+            "cheese",
+            "lettuce",
+            "salsa"
+        ]
+    },
+    {
+        "foodName": "Chicken Bowl",
+        "price": 8.99,
+        "calories": 630,
+        "plateSize": 2,
+        "type": "food",
+        "ingredients": [
+            "rice",
+            "beans",
+            "chicken",
+            "cheese",
+            "lettuce",
+            "salsa"
+        ]
+    },
+    {
+        "foodName": "Steak Burrito Bowl",
+        "price": 9.99,
+        "calories": 600,
+        "plateSize": 2,
+        "type": "food",
+        "ingredients": [
+            "rice",
+            "beans",
+            "steak",
+            "cheese",
+            "lettuce",
+            "salsa"
+        ]
+    },
+    {
+        "foodName": "Steak Bowl",
+        "price": 9.99,
+        "calories": 600,
+        "plateSize": 2,
+        "type": "food",
+        "ingredients": [
+            "rice",
+            "beans",
+            "steak",
+            "cheese",
+            "lettuce",
+            "salsa"
+        ]
+    },
+    {
+        "foodName": "Carnitas Burrito Bowl",
+        "price": 8.99,
+        "calories": 660,
+        "plateSize": 2,
+        "type": "food",
+        "ingredients": [
+            "rice",
+            "beans",
+            "steak",
+            "cheese",
+            "lettuce",
+            "salsa"
+        ]
+    },
+    {
+        "foodName": "Carnitas Bowl",
+        "price": 8.99,
+        "calories": 660,
+        "plateSize": 2,
+        "type": "food",
+        "ingredients": [
+            "rice",
+            "beans",
+            "carnitas",
+            "cheese",
+            "lettuce",
+            "salsa"
+        ]
+    },
+    {
+        "foodName": "Barbacoa Burrito Bowl",
+        "price": 8.99,
+        "calories": 620,
+        "plateSize": 2,
+        "type": "food",
+        "ingredients": [
+            "rice",
+            "beans",
+            "barbacoa",
+            "cheese",
+            "lettuce",
+            "salsa"
+        ]
+    }
+
+]
