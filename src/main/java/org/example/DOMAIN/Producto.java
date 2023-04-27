@@ -1,8 +1,9 @@
 package org.example.DOMAIN;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Producto {
+public class Producto implements Serializable {
     private String foodName;
     private double price;
     private int calories;
@@ -10,10 +11,10 @@ public class Producto {
     private String type;
     private List<String> ingredients;
 
-    public Producto() {
+    private Producto() {
 
     }
-    public Producto(String nombre, int precio, int calorias, int tamaño, String tipo, List<String> ingredientes) {
+    public Producto(String nombre, double precio, int calorias, int tamaño, String tipo, List<String> ingredientes) {
         this.foodName = nombre;
         this.price = precio;
         this.calories = calorias;
@@ -68,5 +69,18 @@ public class Producto {
 
     public void setIngredients(List<String> ingredients) {
         this.ingredients = ingredients;
+    }
+
+    public String firstName(){
+        return foodName.split(" ")[0];
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(foodName).append(", ")
+                .append(calories).append(" kcal, size: ")
+                .append(plateSize);
+        return sb.toString();
     }
 }
