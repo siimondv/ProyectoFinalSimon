@@ -1,6 +1,6 @@
 package org.example.SERVICE;
 
-import org.example.COMMON.InsuficientesMenuException;
+import org.example.COMMON.NumeroMenuException;
 import org.example.COMMON.MenuNoEcontradoException;
 import org.example.COMMON.TipoMenuException;
 import org.example.COMMON.TipoProductoException;
@@ -10,46 +10,47 @@ import org.example.DAO.DaoMenusImplementacion;
 import java.io.IOException;
 import java.util.List;
 
-public class UtilizacionMenus {
+public class UtilizacionMenusYPedidos {
 
     private DaoMenusImplementacion daoMenusImplementacion;
     private DaoAdministracionImplementacion daoAdministracionImplementacion;
-    public UtilizacionMenus() throws IOException {
+
+    public UtilizacionMenusYPedidos() throws IOException {
         daoMenusImplementacion = new DaoMenusImplementacion();
         daoAdministracionImplementacion = new DaoAdministracionImplementacion();
     }
 
-    public void addProductoMenu(String nombreMenu, String nombre, int precio, int calorias, int tamano, String tipo, List<String> ingredientes) throws MenuNoEcontradoException, TipoProductoException, TipoMenuException, InsuficientesMenuException {
-        daoMenusImplementacion.addProductoMenu(nombreMenu,nombre,precio,calorias,tamano,tipo,ingredientes);
+    public boolean addProductoMenu(String nombreMenu, String nombre, int precio, int calorias, int tamano, String tipo, List<String> ingredientes) throws MenuNoEcontradoException, TipoProductoException, TipoMenuException, NumeroMenuException {
+        return daoMenusImplementacion.addProductoMenu(nombreMenu, nombre, precio, calorias, tamano, tipo, ingredientes);
     }
 
-    public void editDescuentoMenu(String nombreMenu, int descuento) throws MenuNoEcontradoException{
-        daoMenusImplementacion.editDescuentoMenu(nombreMenu,descuento);
+    public boolean editDescuentoMenu(String nombreMenu, int descuento) throws MenuNoEcontradoException {
+        return daoMenusImplementacion.editDescuentoMenu(nombreMenu, descuento);
     }
 
-    public void changeNombreMenu(String nombreMenu, String nombreMenuNuevo) throws MenuNoEcontradoException{
-        daoMenusImplementacion.changeNombreMenu(nombreMenu,nombreMenuNuevo);
+    public boolean changeNombreMenu(String nombreMenu, String nombreMenuNuevo) throws MenuNoEcontradoException {
+        return daoMenusImplementacion.changeNombreMenu(nombreMenu, nombreMenuNuevo);
     }
 
-    public void deleteProductoMenu(String nombreMenu, String nombre) throws MenuNoEcontradoException{
-        daoMenusImplementacion.deleteProductoMenu(nombreMenu,nombre);
+    public boolean deleteProductoMenu(String nombreMenu, String nombre) throws MenuNoEcontradoException, NumeroMenuException {
+        return daoMenusImplementacion.deleteProductoMenu(nombreMenu, nombre);
     }
 
 
-    public String getContenidoMenu(String nombreMenu) throws MenuNoEcontradoException{
-       return daoMenusImplementacion.getContenidoMenu(nombreMenu);
+    public String getContenidoMenu(String nombreMenu) throws MenuNoEcontradoException {
+        return daoMenusImplementacion.getContenidoMenu(nombreMenu);
     }
 
-    public List<String> getMenus() {
+    public String getMenus() {
         return daoMenusImplementacion.getMenus();
     }
 
-    public List<String> getMenusPrecioSort() {
-        return daoMenusImplementacion.getMenusPrecioSort();
+    public String getMenusPrecioSort(boolean ascendente) {
+        return daoMenusImplementacion.getMenusPrecioSort(ascendente);
     }
 
-    public List<String> getMenusCaloriasSort() {
-        return daoMenusImplementacion.getMenusCaloriasSort();
+    public String getMenusCaloriasSort(boolean ascendente) {
+        return daoMenusImplementacion.getMenusCaloriasSort(ascendente);
     }
 
     public String getMenusContieneIngrediente(String ingrediente) {
@@ -60,30 +61,32 @@ public class UtilizacionMenus {
         return daoMenusImplementacion.getMenusExcluyeIngrediente(ingrediente);
     }
 
-    public List<String> getMenusDesayuno() {
+    public String getMenusDesayuno() {
         return daoMenusImplementacion.getMenusDesayuno();
     }
 
-    public List<String> getMenuComida() {
+    public String getMenuComida() {
         return daoMenusImplementacion.getMenusComida();
     }
 
-    public void asignarCliente(String nombre, String contra, int edad){
-        daoAdministracionImplementacion.asignarCLiente(nombre,contra,edad);
-    }
-    public void addMenuBolsa(String nombreMenu){
-        daoMenusImplementacion.addMenuBolsa(nombreMenu,daoAdministracionImplementacion);
+    public void asignarCliente(String nombre, String contra, int edad) {
+        daoAdministracionImplementacion.asignarCLiente(nombre, contra, edad);
     }
 
-    public void eliminarMenuBolsa(String nombreMenu) {
-        daoMenusImplementacion.elimninarMenuBolsa(nombreMenu, daoAdministracionImplementacion);
+    public boolean addMenuBolsa(String nombreMenu) throws MenuNoEcontradoException {
+        return daoMenusImplementacion.addMenuBolsa(nombreMenu, daoAdministracionImplementacion);
     }
-    public String listarBolsa(){
+
+    public boolean eliminarMenuBolsa(String nombreMenu) throws MenuNoEcontradoException {
+        return daoMenusImplementacion.elimninarMenuBolsa(nombreMenu, daoAdministracionImplementacion);
+    }
+
+    public String listarBolsa() {
         return daoAdministracionImplementacion.getListaBolsa();
     }
 
-    public void guardarEstadoCliente() throws IOException {
-        daoAdministracionImplementacion.guardarEstadoCliente();
+    public boolean guardarEstadoCliente() throws IOException {
+        return daoAdministracionImplementacion.guardarEstadoCliente();
     }
 
     public boolean recuperarEstadoCliente(String nombreCliente) throws IOException {
@@ -93,7 +96,36 @@ public class UtilizacionMenus {
     public boolean revisarContrasena(String contrasena) {
         return daoAdministracionImplementacion.revisarContrasena(contrasena);
     }
+
     public boolean addPedido() throws IOException {
         return daoAdministracionImplementacion.addPedido();
+    }
+
+    public String listarPedidos() {
+        return daoAdministracionImplementacion.listarPedidos();
+    }
+
+    public String listarPedidosMaxPrecio(int precio) {
+        return daoAdministracionImplementacion.listarPedidosMaxPrecio(precio);
+    }
+
+    public String listarPedidosPorNombre(String nommbre) {
+        return daoAdministracionImplementacion.listarPedidosPorNombre(nommbre);
+    }
+
+    public boolean modifyPedidoPrecio(int id, double total) {
+        return daoAdministracionImplementacion.modifyPrecioPedido(id, total);
+    }
+
+    public boolean modifyNombrePedido(int id, String nombre) {
+        return daoAdministracionImplementacion.modifyNombrePedido(id, nombre);
+    }
+
+    public boolean deletePedido(int id) {
+        return daoAdministracionImplementacion.deletePedido(id);
+    }
+
+    public boolean deleteAllPedidos() {
+        return daoAdministracionImplementacion.deleteAllPedidos();
     }
 }

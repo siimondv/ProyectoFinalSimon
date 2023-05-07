@@ -1,7 +1,5 @@
 package org.example.DOMAIN;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.io.Serializable;
 import java.util.List;
@@ -29,7 +27,6 @@ public class Menu implements Serializable, Comparable<Menu>  {
     }
 
     public List<Producto> getMenu() {
-        //copy of
         return menu;
     }
 
@@ -61,18 +58,16 @@ public class Menu implements Serializable, Comparable<Menu>  {
         this.nombreMenu = nombreMenu;
     }
     public void addProductoMenu(Producto pr){
-        //revisar error maximo 3 productos
         menu.add(pr);
     }
     public Producto removeRetrieveProductoMenu(String pr) throws IllegalArgumentException{
-        //revisar error maximo 3 productos
         for (Producto pro: menu) {
             if (pro.getFoodName().equals(pr)){
                 menu.remove(pro);
                 return pro;
             }
         }
-            throw new IllegalArgumentException("Este producto no existe");
+            throw new IllegalArgumentException();
     }
     public int sumCalorias(){
         int suma = 0;
